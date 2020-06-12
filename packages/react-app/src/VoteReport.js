@@ -27,7 +27,7 @@ export default function TimeReport(props) {
   let displayVotes = []
   let winner
   for(let r in results){
-    let floatValue = parseFloat(ethers.utils.formatEther(results[r]))
+    let floatValue = parseFloat((results[r])/10**4)
     if( typeof winner == "undefined" || winner.floatValue < floatValue){
       winner = {
         vote:r,

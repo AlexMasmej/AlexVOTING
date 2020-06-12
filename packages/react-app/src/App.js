@@ -40,10 +40,12 @@ function App() {
           injectedProvider={injectedProvider}
           localProvider={localProvider}
         />
-        <div style={{display:"none"}}>
+        <div>
           <TimeReport
             mainnetProvider={mainnetProvider}
           />
+        </div>
+        <div style={{display:"none"}}>
           <VoteReport />
         </div>
       </div>

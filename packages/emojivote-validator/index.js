@@ -6,11 +6,11 @@ const { ethers, Contract } = require('ethers');
 //FIRST YOU NEED TO SETUP GOOGLE SHEETS PERMISSIONS:
 //https://developers.google.com/sheets/api/quickstart/nodejs
 
-const SPREADSHEET_ID = '1Yh2k5DY66b2tct01EVAV-6jgSFFJtv5CEEtnxr_la_0'
+const SPREADSHEET_ID = '1Ds75o2arsLMz_EZrgQPz2yaMqJP5bdgzrfH5tysPg6k'
 
 const OUTPUT_FILE = "../react-app/src/validVotes.json";
 const ERC20_ABI = [{"constant": true,"inputs": [{"name": "_owner","type": "address"}],"name": "balanceOf","outputs": [{"name": "balance","type": "uint256"}],"payable": false,"type": "function"}]
-const ERC20_TOKEN_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f"
+const ERC20_TOKEN_ADDRESS = "0x8BA6DcC667d3FF64C1A2123cE72FF5F0199E5315"
 const mainnetProvider = new ethers.providers.InfuraProvider("mainnet","2717afb6bf164045b5d5468031b93f87")
 const tokenContract = new Contract(ERC20_TOKEN_ADDRESS, ERC20_ABI,mainnetProvider);
 
@@ -59,7 +59,7 @@ fs.readFile('credentials.json', (err, content) => {
               balance = await tokenContract.balanceOf(validAddress);
             }
 
-            console.log("💰 Balance of "+validAddress+" is "+ethers.utils.formatEther(balance) );
+            console.log("💰 Balance of "+validAddress+" is "+balance * 10**4);
 
             let thisVote = {
               address: validAddress,

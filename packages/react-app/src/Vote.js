@@ -27,7 +27,7 @@ export default function SmartContractWallet(props) {
     console.log("recovered",recovered)
 
     /// CHANGE THIS TO YOUR ZAP: 
-    axios.get('https://hooks.zapier.com/hooks/catch/7580698/oisrrw0/?address='+props.address+'&vote='+emoji+'&timestamp='+timestamp+'&signature='+result)
+    axios.get('https://hooks.zapier.com/hooks/catch/4100330/oi1jxzj/?address='+props.address+'&vote='+emoji+'&timestamp='+timestamp+'&signature='+result)
     .then(function (response) {
       console.log(response);
     })
