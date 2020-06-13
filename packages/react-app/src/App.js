@@ -45,9 +45,27 @@ function App() {
             mainnetProvider={mainnetProvider}
           />
         </div>
-        <div style={{display:"none"}}>
+        <div style={{display: "none"}}>
           <VoteReport />
         </div>
+                <br></br>
+          <div>
+          <br></br>
+          <h1>💰 Don't have any $ALEX token to vote? Get some here:</h1>
+          <br></br>
+          </div>
+<iframe
+  src="https://uniswap.exchange/swap?outputCurrency=0x8ba6dcc667d3ff64c1a2123ce72ff5f0199e5315&theme=light"
+  height="660px"
+  width="500px"
+  style={{
+    border: 0,
+    margin: "auto",
+    display: "block",
+    borderradius: 10,
+    maxwidth: "600px",
+    minwidth: "300px",}}
+/>
       </div>
     </div>
   );

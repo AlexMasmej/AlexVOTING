@@ -36,7 +36,7 @@ export default function TimeReport(props) {
     }
     displayVotes.push(
       <div key={"vote"+r}>
-        {r} {floatValue.toFixed(4)}
+        <strong>{r}</strong> collected <strong>{floatValue.toFixed(4)}</strong> $ALEX votes
       </div>
     )
   }
@@ -46,13 +46,13 @@ export default function TimeReport(props) {
       <Card
         title={(
           <div>
-            📑  Votes: ( {winner?winner.vote+" is winning":""} )
+            <h1>📑  Votes so far: {winner?winner.vote+" is winning!":""}</h1>
           </div>
         )}
         size="large"
-        style={{ width: 550, margin: "auto" }}
+        style={{ width: "100%", margin: "auto" }}
         >
-          {displayVotes}
+          <h1>{displayVotes}</h1>
       </Card>
     </div>
   );

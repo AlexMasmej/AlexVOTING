@@ -7,8 +7,7 @@ export default function Header(props) {
       window.open("https://twitter.com/AlexMasmej");
     }}>
       <PageHeader
-        title="VOTE ON MY LIFE via $ALEX"
-        subTitle="Pick one challenge, and I will do it next month."
+        title="CONTROL MY LIFE via $ALEX"
         style={{cursor:'pointer'}}
       />
     </div>

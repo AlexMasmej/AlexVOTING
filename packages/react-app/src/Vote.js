@@ -37,20 +37,34 @@ export default function SmartContractWallet(props) {
   }
 
   return (
-    <div>
+    <div style={{margin: "auto"}}>
       <Card
         title={(
           <div>
-            <h2>🗳 Pick the challenge I will do everyday next month:</h2>
+            <h1 style={{color: "black", margin: "auto"}}><strong>🗳 Vote for the daily habit I will adopt in July.</strong></h1>
+            <h3 style={{color: "grey"}}>Rule: 1 $ALEX = 1 vote. This vote is free, because it is not a transaction.<br></br>It is a signature to vote with the $ALEX tokens owned by your address.<br></br>If you vote more than once with the same address, only the last vote will count.<br></br>Results will be displayed here at the end of the vote.<br></br><br></br><strong style={{color: "black"}}>Please keep your $ALEX in your wallet during the voting period.</strong></h3>
           </div>
         )}
         size="large"
-        style={{margin: "auto", size: "large" }}
         >
+        <div style={{background: "rgb(61,0,255)",
+background: "radial-gradient(circle, rgba(150,0,500,100) 0%, rgba(0,10,25,190) 100%, rgba(255,255,255,1) 50%)"}}>
+          <br></br>   
+          <br></br>
           {voteButton("💦 Jog 5 miles")}
+          <br></br>
+          <br></br>     
           {voteButton("🥩 Stop eating red meat")}
+                    <br></br>
+                    <br></br>
           {voteButton("🧘‍♂️ Meditate 15 minutes")}
+                    <br></br>               <br></br> 
+ 
           {voteButton("⏰ Wake up at 6AM")}
+                    <br></br>     
+                              <br></br><br></br>       
+
+          </div>
       </Card>
     </div>
   );
