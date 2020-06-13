@@ -33,6 +33,15 @@ function App() {
           mainnetProvider={mainnetProvider}
           price={price}
         />
+      <div>
+      <iframe
+  src="https://uniswap.exchange/swap?outputCurrency=0x8ba6dcc667d3ff64c1a2123ce72ff5f0199e5315"
+  style={{position:'block',textAlign:'right',right:0,top:0,padding:0}}
+  height="660px"
+  width="100%"
+  id="myId"
+/>
+      </div>
       </div>
       <div style={{padding:40,textAlign: "left"}}>
         <Vote
