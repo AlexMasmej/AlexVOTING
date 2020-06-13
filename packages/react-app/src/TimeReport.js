@@ -22,7 +22,7 @@ export default function TimeReport(props) {
           </div>
         )}
         size="large"
-        style={{ width: 1000, marginTop: 50}}
+        style={{ width: 550, marginTop: 50}}
         >
           <div>
             at mainnet timestamp: {TIME_WHEN_VOTES_WILL_BE_COUNTED}

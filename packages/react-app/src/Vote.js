@@ -45,7 +45,7 @@ export default function SmartContractWallet(props) {
           </div>
         )}
         size="large"
-        style={{ width: 1000, marginTop: 25 }}
+        style={{ width: 550, marginTop: 25 }}
         >
           {voteButton("🏃‍♂️ Jog 5 miles a day")}
           {voteButton("🥩 Stop eating red meat")}
