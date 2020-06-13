@@ -15,24 +15,47 @@ export default function TimeReport(props) {
 
   return (
     <div>
+    <br></br>
       <Card
         title={(
           <div>
-            🕰  Votes will be counted on <strong>Wednesday 17th June, 12AM UTC</strong>
+            <h2>🕰  Votes will be counted on Wednesday 17th June, 12AM UTC</h2>
           </div>
         )}
         size="large"
-        style={{ width: 550, marginTop: 50}}
+        style={{margin: "auto"}}
         >
-          <div>
-            at mainnet timestamp: {TIME_WHEN_VOTES_WILL_BE_COUNTED}
+          <div style={{display: "none"}}>
+           at mainnet timestamp: {TIME_WHEN_VOTES_WILL_BE_COUNTED}
           </div>
-          <div>
+          <div style={{display: "none"}}>
             current timestamp: {timestamp}
           </div>
           <div>
-            ({prettyTimeFromNow(timeLeft)} from now)
+            <h2>{prettyTimeFromNow(timeLeft)} from now</h2>
           </div>
+      </Card>
+          <br></br>
+      <Card>
+          <div>
+          <br></br>
+          <h2>💰 Don't have any $ALEX token to vote? Buy some on Uniswap below:</h2>
+          <br></br>
+          </div>
+      <div>
+<iframe
+  src="https://uniswap.exchange/swap?outputCurrency=0x8ba6dcc667d3ff64c1a2123ce72ff5f0199e5315&theme=light"
+  height="660px"
+  width="500px"
+  style={{
+    border: 0,
+    margin: "auto",
+    display: "block",
+    borderradius: 10,
+    maxwidth: "600px",
+    minwidth: "300px",}}
+/>
+</div>
       </Card>
     </div>
   );
@@ -48,5 +71,5 @@ function prettyTimeFromNow(timeLeft) {
     if (hours   < 10) {hours   = "0"+hours;}
     if (minutes < 10) {minutes = "0"+minutes;}
     if (seconds < 10) {seconds = "0"+seconds;}
-    return hours+' hours '+ minutes+'minutes '+seconds+' seconds';
+    return hours+' hours, '+ minutes+' minutes, '+seconds+' seconds';
 }
