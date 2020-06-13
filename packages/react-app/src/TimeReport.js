@@ -6,7 +6,7 @@ import { Card } from 'antd';
 export default function TimeReport(props) {
 
   // pick a time here: https://www.unixtimestamp.com/index.php and paste it here:
-  const TIME_WHEN_VOTES_WILL_BE_COUNTED = 1599019200
+  const TIME_WHEN_VOTES_WILL_BE_COUNTED = 1592352000
 
   const timestamp = useTimestamp(props.mainnetProvider)
   const timeLeft = TIME_WHEN_VOTES_WILL_BE_COUNTED - timestamp
@@ -18,11 +18,11 @@ export default function TimeReport(props) {
       <Card
         title={(
           <div>
-            🕰  Votes will be counted:
+            🕰  Votes will be counted on <strong>Wednesday 17th June, 12AM UTC</strong>
           </div>
         )}
         size="large"
-        style={{ width: 550, marginTop: 25 }}
+        style={{ width: 1000, marginTop: 50}}
         >
           <div>
             at mainnet timestamp: {TIME_WHEN_VOTES_WILL_BE_COUNTED}
@@ -48,5 +48,5 @@ function prettyTimeFromNow(timeLeft) {
     if (hours   < 10) {hours   = "0"+hours;}
     if (minutes < 10) {minutes = "0"+minutes;}
     if (seconds < 10) {seconds = "0"+seconds;}
-    return hours+':'+minutes+':'+seconds;
+    return hours+' hours '+ minutes+'minutes '+seconds+' seconds';
 }

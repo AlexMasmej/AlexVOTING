@@ -4,7 +4,7 @@ import { PageHeader } from 'antd';
 export default function Header(props) {
   return (
     <div onClick={()=>{
-      window.open("https://github.com/austintgriffith/scaffold-eth");
+      window.open("https://twitter.com/AlexMasmej");
     }}>
       <PageHeader
         title="VOTE ON MY LIFE via $ALEX"

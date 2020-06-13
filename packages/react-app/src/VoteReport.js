@@ -50,7 +50,7 @@ export default function TimeReport(props) {
           </div>
         )}
         size="large"
-        style={{ width: 550, marginTop: 25 }}
+        style={{ width: 1000, marginTop: 25 }}
         >
           {displayVotes}
       </Card>
