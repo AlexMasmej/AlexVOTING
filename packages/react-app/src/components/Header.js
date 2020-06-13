@@ -7,8 +7,8 @@ export default function Header(props) {
       window.open("https://github.com/austintgriffith/scaffold-eth");
     }}>
       <PageHeader
-        title="🗳️ emojivote - scaffold-eth"
-        subTitle="personal token web2 voting system with signed messages"
+        title="VOTE ON MY LIFE via $ALEX"
+        subTitle="Pick one challenge, and I will do it next month."
         style={{cursor:'pointer'}}
       />
     </div>

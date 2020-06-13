@@ -47,13 +47,10 @@ export default function SmartContractWallet(props) {
         size="large"
         style={{ width: 550, marginTop: 25 }}
         >
-          {voteButton("🐮",)}
-          {voteButton("🦁")}
-          {voteButton("🐭")}
-          {voteButton("🦊")}
-          {voteButton("🐶")}
-          {voteButton("🐰")}
-          {voteButton("🐸")}
+          {voteButton("🏃‍♂️ Jog 5 miles a day")}
+          {voteButton("🥩 Stop eating red meat")}
+          {voteButton("🧘‍♂️ Meditate 15 minutes daily")}
+          {voteButton("⏰ Wake up at 6AM")}
       </Card>
     </div>
   );
