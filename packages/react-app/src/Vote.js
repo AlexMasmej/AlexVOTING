@@ -7,7 +7,7 @@ export default function SmartContractWallet(props) {
 
   const voteButton = (emoji)=>{
     return (
-      <Button onClick={()=>{
+      <Button size="large" onClick={()=>{
         castVote(emoji,translateEmoji(emoji))
       }}>{emoji}</Button>
     )
@@ -45,7 +45,7 @@ export default function SmartContractWallet(props) {
           </div>
         )}
         size="large"
-        style={{margin: "auto" }}
+        style={{margin: "auto", size: "large" }}
         >
           {voteButton("💦 Jog 5 miles")}
           {voteButton("🥩 Stop eating red meat")}
