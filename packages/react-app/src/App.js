@@ -47,7 +47,7 @@ function App() {
                     localProvider={localProvider}
                 />
                 <TimeReport mainnetProvider={mainnetProvider} />
-                <div>
+                <div style={{display: "none"}}>
                     <VoteReport />
                 </div>
                 <p>💰 Don't have any $ALEX token to vote? Get some here:</p>
