@@ -56,7 +56,7 @@ header a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 17pt;
+    font-size: 20pt;
 }
 
 .vote-container,
@@ -89,6 +89,7 @@ header a:hover {
 
 ul {
     text-align: center;
+    font-size: 17pt;
 }
 
 li {
@@ -107,7 +108,8 @@ li {
     .ant-typography a {
         font-size: 10pt;
     }
-    .body-container {
+    .body-container,
+    ul {
         font-size: 10pt;
     }
 }
