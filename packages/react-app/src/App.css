@@ -81,6 +81,13 @@ header a:hover {
     max-width: 70%;
 }
 
+.producthunt-badge {
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	z-index:100
+}
+
 .button-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,7 +108,7 @@ header a:hover {
 }
 
 #bitcoin {
-    background-color: #ff6600;
+    background-color: #c96a20;
 }
 
 #wake-up {
@@ -122,8 +129,8 @@ header a:hover {
 
 #bitcoin:hover {
     background-color: white;
-    color: #ff6600;
-    border: 1px solid #ff6600;
+    color: #c96a20;
+    border: 1px solid #c96a20;
 }
 
 #wake-up:hover {
@@ -157,6 +164,9 @@ li {
     ul {
         font-size: 10pt;
     }
+    .producthunt-badge {
+	display: none;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -177,4 +187,7 @@ li {
         max-width: 100%;
         min-width: 100%;
     }
+    .producthunt-badge {
+	display: none;
+	}
 }

@@ -86,6 +86,10 @@ export default function SmartContractWallet(props) {
                         After voting, please keep your $ALEX in your wallet
                         until the final count.
                     </li>
+                    <li style={{color: 'black'}}>
+                    <br></br>
+                        <strong>VOTE BELOW:</strong>
+                    </li>
                 </ul>
             </div>
 

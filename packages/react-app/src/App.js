@@ -47,7 +47,7 @@ function App() {
                     localProvider={localProvider}
                 />
                 <TimeReport mainnetProvider={mainnetProvider} />
-                <div style={{ display: "none" }}>
+                <div>
                     <VoteReport />
                 </div>
                 <p>💰 Don't have any $ALEX token to vote? Get some here:</p>
@@ -68,6 +68,9 @@ function App() {
                         minwidth: "300px",
                     }}
                 />
+            </div>
+            <div className='producthunt-badge'>
+            <a href="https://www.producthunt.com/posts/magic-11?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-magic-11" target="_blank" rel="noopener noreferrer"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=190558&amp;theme=light" alt="Magic - Use the slickest magic link login in your app | Product Hunt Embed" width="250px" height="54px"/></a>
             </div>
         </div>
     );

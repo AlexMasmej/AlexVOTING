@@ -46,11 +46,11 @@ export default function TimeReport(props) {
       <Card
         title={(
           <div>
-            <h1>📑  Votes so far: {winner?winner.vote+" is winning!":""}</h1>
+            <h1>📑  UPDATE: {winner?winner.vote+" is winning!":""}</h1>
           </div>
         )}
         size="large"
-        style={{ width: "100%", margin: "auto" }}
+        style={{ width: "100%", margin: "auto"}}
         >
           <h1>{displayVotes}</h1>
       </Card>
