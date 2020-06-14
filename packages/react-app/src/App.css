@@ -92,8 +92,44 @@ header a:hover {
     font-weight: bold;
 }
 
-.button-container button:hover {
-    color: white;
+#jog {
+    background-color: #142850;
+}
+
+#meat {
+    background-color: #84142d;
+}
+
+#meditate {
+    background-color: #5e6472;
+}
+
+#wake-up {
+    background-color: #e85d04;
+}
+
+#jog:hover {
+    background-color: white;
+    color: #142850;
+    border: 1px solid #142850;
+}
+
+#meat:hover {
+    background-color: white;
+    color: #84142d;
+    border: 1px solid #84142d;
+}
+
+#meditate:hover {
+    background-color: white;
+    color: #5e6472;
+    border: 1px solid #5e6472;
+}
+
+#wake-up:hover {
+    background-color: white;
+    color: #e85d04;
+    border: 1px solid #e85d04;
 }
 
 ul {

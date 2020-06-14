@@ -91,7 +91,7 @@ export default function SmartContractWallet(props) {
 
             <div className='button-container'>
                 <Button
-                    style={{ background: "#142850" }}
+                    id='jog'
                     size='large'
                     onClick={() => {
                         castVote(
@@ -103,7 +103,7 @@ export default function SmartContractWallet(props) {
                     {"💦 Jog 5 miles"}
                 </Button>
                 <Button
-                    style={{ background: "#84142d" }}
+                    id='meat'
                     size='large'
                     onClick={() => {
                         castVote(
@@ -115,7 +115,7 @@ export default function SmartContractWallet(props) {
                     {"🥩 Stop eating red meat"}
                 </Button>
                 <Button
-                    style={{ background: "#5e6472" }}
+                    id='meditate'
                     size='large'
                     onClick={() => {
                         castVote(
@@ -127,7 +127,7 @@ export default function SmartContractWallet(props) {
                     {"🧘‍♂️ Meditate 15 minutes"}
                 </Button>
                 <Button
-                    style={{ background: "#e85d04" }}
+                    id='wake-up'
                     size='large'
                     onClick={() => {
                         castVote(
