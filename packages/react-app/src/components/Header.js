@@ -8,7 +8,7 @@ export default function Header(props) {
     }}>
       <PageHeader
         title="CONTROL MY LIFE via $ALEX"
-        style={{cursor:'pointer'}}
+        style={{position:'flex',textAlign:'left', cursor:'pointer'}}
       />
     </div>
   );

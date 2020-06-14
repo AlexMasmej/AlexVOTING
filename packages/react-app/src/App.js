@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div style={{position:'fixed',textAlign:'right',right:0,top:0,padding:10}}>
+      <div style={{position: 'fixed',textAlign:'right',right:0,top:0,padding:10}}>
         <Account
           address={address}
           setAddress={setAddress}
@@ -34,7 +34,7 @@ function App() {
           price={price}
         />
       </div>
-      <div style={{padding:40,textAlign: "center"}}>
+      <div style={{textAlign: "center"}}>
         <Vote
           address={address}
           injectedProvider={injectedProvider}
@@ -57,7 +57,7 @@ function App() {
 <iframe
   src="https://uniswap.exchange/swap?outputCurrency=0x8ba6dcc667d3ff64c1a2123ce72ff5f0199e5315&theme=light"
   height="660px"
-  width="500px"
+  width="100%"
   style={{
     border: 0,
     margin: "auto",

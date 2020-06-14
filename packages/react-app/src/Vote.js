@@ -37,12 +37,12 @@ export default function SmartContractWallet(props) {
   }
 
   return (
-    <div style={{margin: "auto"}}>
+    <div>
       <Card
         title={(
           <div>
-            <h1 style={{color: "black", margin: "auto"}}><strong>🗳 Vote for the daily habit I will adopt in July.</strong></h1>
-            <h3 style={{color: "grey"}}>Rule: 1 $ALEX = 1 vote. This vote is free, because it is not a transaction.<br></br>It is a signature to vote with the $ALEX tokens owned by your address.<br></br>If you vote more than once with the same address, only the last vote will count.<br></br>Results will be displayed here at the end of the vote.<br></br><br></br><strong style={{color: "black"}}>Please keep your $ALEX in your wallet during the voting period.</strong></h3>
+            <h1 style={{color: "black"}}><strong>🗳 Use $ALEX to vote for the daily habit I will adopt in July.</strong></h1>
+            <h3 style={{color: "grey"}}>Rule: 1 $ALEX = 1 vote. The vote itself is free: it is a signature, not a transaction.<br></br>All $ALEX tokens owned by your address at the end will count.<br></br>If you vote more than once with the same address, only the last one will count.<br></br>Results will be displayed here at the end of the vote.<br></br><br></br><strong style={{color: "black"}}>After voting, please keep your $ALEX in your wallet until the final count.</strong></h3>
           </div>
         )}
         size="large"
