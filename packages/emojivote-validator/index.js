@@ -41,8 +41,8 @@ fs.readFile('credentials.json', (err, content) => {
           //console.log(`-------- Checking Vote: ${row[0]}, ${row[1]}`);
           let signature = row[3];
           let timestamp = row[2];
-          let emoji = row[1]
-          let reconstructedMessage = "emojivote"+translateEmoji(emoji)+timestamp;
+          let vote = row[1]
+          let reconstructedMessage = "lifevote1"+vote+timestamp;
           //console.log("reconstructedMessage",reconstructedMessage)
           let recovered = await ethers.utils.verifyMessage ( reconstructedMessage , signature )
           //console.log("recovered",recovered)
@@ -152,22 +152,4 @@ function getNewToken(oAuth2Client, callback) {
       callback(oAuth2Client);
     });
   });
-}
-
-const translateEmoji = (emoji)=>{
-  if(emoji==="🦁"){
-    return "LION"
-  } else if(emoji==="🐮"){
-    return "COW"
-  } else if(emoji==="🐭"){
-    return "MOUSE"
-  } else if(emoji==="🦊"){
-    return "FOX"
-  } else if(emoji==="🐶"){
-    return "DOG"
-  } else if(emoji==="🐰"){
-    return "RABBIT"
-  } else if(emoji==="🐸"){
-    return "FROG"
-  }
 }

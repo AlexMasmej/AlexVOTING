@@ -17,13 +17,13 @@ export default function SmartContractWallet(props) {
     //     );
     // };
 
-    const castVote = async (emoji, emojiName) => {
+    const castVote = async (vote) => {
         let timestamp = Date.now();
         console.log("timestamp", timestamp);
         console.log("props.injectedProvider", props.injectedProvider);
         let signer = props.injectedProvider.getSigner();
         console.log("props.address", props.address);
-        let message = "emojivote" + emojiName + timestamp;
+        let message = "lifevote1" + vote + timestamp;
         console.log("message", message);
         let result = await signer.signMessage(message);
         console.log("result", result);
@@ -36,7 +36,7 @@ export default function SmartContractWallet(props) {
                 "https://hooks.zapier.com/hooks/catch/4100330/oi1jxzj/?address=" +
                     props.address +
                     "&vote=" +
-                    emoji +
+                    vote +
                     "&timestamp=" +
                     timestamp +
                     "&signature=" +
@@ -99,8 +99,7 @@ export default function SmartContractWallet(props) {
                     size='large'
                     onClick={() => {
                         castVote(
-                            "😩 Jog 5 miles",
-                            translateEmoji("😩 Jog 5 miles")
+                            "jog"
                         );
                     }}
                 >
@@ -111,8 +110,7 @@ export default function SmartContractWallet(props) {
                     size='large'
                     onClick={() => {
                         castVote(
-                            "🥩 Stop eating red meat",
-                            translateEmoji("🥩 Stop eating red meat")
+                            "meat"
                         );
                     }}
                 >
@@ -123,8 +121,7 @@ export default function SmartContractWallet(props) {
                     size='large'
                     onClick={() => {
                         castVote(
-                            "💰 Survive only on Bitcoin",
-                            translateEmoji("💰 Survive only on Bitcoin")
+                            "bitcoin"
                         );
                     }}
                 >
@@ -135,8 +132,7 @@ export default function SmartContractWallet(props) {
                     size='large'
                     onClick={() => {
                         castVote(
-                            "⏰ Wake up at 6AM",
-                            translateEmoji("⏰ Wake up at 6AM")
+                            "wakeup"
                         );
                     }}
                 >
@@ -151,20 +147,3 @@ export default function SmartContractWallet(props) {
     );
 }
 
-const translateEmoji = (emoji) => {
-    if (emoji === "🦁") {
-        return "LION";
-    } else if (emoji === "🐮") {
-        return "COW";
-    } else if (emoji === "🐭") {
-        return "MOUSE";
-    } else if (emoji === "🦊") {
-        return "FOX";
-    } else if (emoji === "🐶") {
-        return "DOG";
-    } else if (emoji === "🐰") {
-        return "RABBIT";
-    } else if (emoji === "🐸") {
-        return "FROG";
-    }
-};
