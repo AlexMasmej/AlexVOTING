@@ -1,4 +1,4 @@
-Hey everyone! This is [Alex Masmej](https://twitter.com/AlexMasmej) "CONTROL MY LIFE" experiment with my social token [$ALEX](https://alex.buymagic.xyz).
+Hey everyone! This is [Alex Masmej](https://twitter.com/AlexMasmej) "CONTROL MY LIFE" experiment with my social token [$ALEX](http://alex.buymagic.xyz/).
 
 Feel free to fork or PR this repo if you have any improvement :)
 
