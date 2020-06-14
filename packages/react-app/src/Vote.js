@@ -95,12 +95,12 @@ export default function SmartContractWallet(props) {
                     size='large'
                     onClick={() => {
                         castVote(
-                            "💦 Jog 5 miles",
-                            translateEmoji("💦 Jog 5 miles")
+                            "😩 Jog 5 miles",
+                            translateEmoji("😩 Jog 5 miles")
                         );
                     }}
                 >
-                    {"💦 Jog 5 miles"}
+                    {"😩 Jog 5 miles"}
                 </Button>
                 <Button
                     id='meat'
@@ -115,16 +115,16 @@ export default function SmartContractWallet(props) {
                     {"🥩 Stop eating red meat"}
                 </Button>
                 <Button
-                    id='meditate'
+                    id='bitcoin'
                     size='large'
                     onClick={() => {
                         castVote(
-                            "🧘‍♂️ Meditate 15 minutes",
-                            translateEmoji("🧘‍♂️ Meditate 15 minutes")
+                            "💰 Survive only on Bitcoin",
+                            translateEmoji("💰 Survive only on Bitcoin")
                         );
                     }}
                 >
-                    {"🧘‍♂️ Meditate 15 minutes"}
+                    {"💰 Survive only using Bitcoin"}
                 </Button>
                 <Button
                     id='wake-up'
@@ -138,9 +138,9 @@ export default function SmartContractWallet(props) {
                 >
                     {"⏰ Wake up at 6AM"}
                 </Button>
-                {/* {voteButton("💦 Jog 5 miles")}
+                {/* {voteButton("😩 Jog 5 miles")}
                 {voteButton("🥩 Stop eating red meat")}
-                {voteButton("🧘‍♂️ Meditate 15 minutes")}
+                {voteButton("💰 Survive only on Bitcoin")}
                 {voteButton("⏰ Wake up at 6AM")} */}
             </div>
         </div>

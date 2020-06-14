@@ -93,25 +93,25 @@ header a:hover {
 }
 
 #jog {
-    background-color: #142850;
+    background-color: #05146b;
 }
 
 #meat {
     background-color: #84142d;
 }
 
-#meditate {
-    background-color: #5e6472;
+#bitcoin {
+    background-color: #ff6600;
 }
 
 #wake-up {
-    background-color: #e85d04;
+    background-color: #5e6472;
 }
 
 #jog:hover {
     background-color: white;
-    color: #142850;
-    border: 1px solid #142850;
+    color: #05146b;
+    border: 1px solid #05146b;
 }
 
 #meat:hover {
@@ -120,16 +120,16 @@ header a:hover {
     border: 1px solid #84142d;
 }
 
-#meditate:hover {
+#bitcoin:hover {
     background-color: white;
-    color: #5e6472;
-    border: 1px solid #5e6472;
+    color: #ff6600;
+    border: 1px solid #ff6600;
 }
 
 #wake-up:hover {
     background-color: white;
-    color: #e85d04;
-    border: 1px solid #e85d04;
+    color: #5e6472;
+    border: 1px solid #5e6472;
 }
 
 ul {
