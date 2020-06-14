@@ -53,16 +53,16 @@ export default function SmartContractWallet(props) {
     return (
         <div className='vote-container'>
             <div className='sub-container'>
-                <p
+                <h3
                     style={{
                         textAlign: "center",
-                        fontSize: "13pt",
+
                         fontWeight: "bold",
                     }}
                 >
                     🗳 Use $ALEX to vote for the daily habit I will adopt in
                     July.
-                </p>
+                </h3>
                 <ul>
                     <li>
                         1 $ALEX = 1 vote. The vote itself is free: it is a
