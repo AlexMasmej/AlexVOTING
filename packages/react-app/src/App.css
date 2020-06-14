@@ -87,6 +87,15 @@ header a:hover {
     grid-gap: 10px;
 }
 
+.button-container Button {
+    color: white;
+    font-weight: bold;
+}
+
+.button-container button:hover {
+    color: white;
+}
+
 ul {
     text-align: center;
     font-size: 17pt;
