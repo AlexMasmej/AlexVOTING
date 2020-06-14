@@ -4,18 +4,18 @@ import { Button } from "antd";
 const axios = require("axios");
 
 export default function SmartContractWallet(props) {
-    const voteButton = (emoji) => {
-        return (
-            <Button
-                size='large'
-                onClick={() => {
-                    castVote(emoji, translateEmoji(emoji));
-                }}
-            >
-                {emoji}
-            </Button>
-        );
-    };
+    // const voteButton = (emoji) => {
+    //     return (
+    //         <Button
+    //             size='large'
+    //             onClick={() => {
+    //                 castVote(emoji, translateEmoji(emoji));
+    //             }}
+    //         >
+    //             {emoji}
+    //         </Button>
+    //     );
+    // };
 
     const castVote = async (emoji, emojiName) => {
         let timestamp = Date.now();
@@ -90,10 +90,58 @@ export default function SmartContractWallet(props) {
             </div>
 
             <div className='button-container'>
-                {voteButton("💦 Jog 5 miles")}
+                <Button
+                    id='jog'
+                    size='large'
+                    onClick={() => {
+                        castVote(
+                            "💦 Jog 5 miles",
+                            translateEmoji("💦 Jog 5 miles")
+                        );
+                    }}
+                >
+                    {"💦 Jog 5 miles"}
+                </Button>
+                <Button
+                    id='meat'
+                    size='large'
+                    onClick={() => {
+                        castVote(
+                            "🥩 Stop eating red meat",
+                            translateEmoji("🥩 Stop eating red meat")
+                        );
+                    }}
+                >
+                    {"🥩 Stop eating red meat"}
+                </Button>
+                <Button
+                    id='meditate'
+                    size='large'
+                    onClick={() => {
+                        castVote(
+                            "🧘‍♂️ Meditate 15 minutes",
+                            translateEmoji("🧘‍♂️ Meditate 15 minutes")
+                        );
+                    }}
+                >
+                    {"🧘‍♂️ Meditate 15 minutes"}
+                </Button>
+                <Button
+                    id='wake-up'
+                    size='large'
+                    onClick={() => {
+                        castVote(
+                            "⏰ Wake up at 6AM",
+                            translateEmoji("⏰ Wake up at 6AM")
+                        );
+                    }}
+                >
+                    {"⏰ Wake up at 6AM"}
+                </Button>
+                {/* {voteButton("💦 Jog 5 miles")}
                 {voteButton("🥩 Stop eating red meat")}
                 {voteButton("🧘‍♂️ Meditate 15 minutes")}
-                {voteButton("⏰ Wake up at 6AM")}
+                {voteButton("⏰ Wake up at 6AM")} */}
             </div>
         </div>
     );
