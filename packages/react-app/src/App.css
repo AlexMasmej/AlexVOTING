@@ -1,5 +1,118 @@
 .App {
-  text-align: center;
-  font-family: sans-serif, arial;
-  white-space: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif, arial;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.account {
+    font-size: 10px;
+    margin: auto;
+}
+
+.ant-typography {
+    font-size: 20pt;
+}
+
+.ant-typography a {
+    font-size: 20pt;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vote-container,
+.sub-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.time-report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.uniswap-container {
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 2.5px;
+}
+
+@media only screen and (max-width: 600px) {
+    header a {
+        font-size: 15pt;
+    }
+    .ant-typography {
+        font-size: 10pt;
+    }
+
+    .ant-typography a {
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header a {
+        font-size: 10pt;
+    }
+    .button-container {
+        grid-template-columns: 1fr;
+    }
+    .ant-typography {
+        font-size: 8pt;
+    }
+
+    .ant-typography a {
+        font-size: 8pt;
+    }
+    .uniswap-container {
+        max-width: 100%;
+        min-width: 100%;
+    }
 }
