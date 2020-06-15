@@ -88,6 +88,26 @@ header a:hover {
 	z-index:100
 }
 
+.ant-notification-notice {
+	background-color: green;
+	color: white;
+}
+
+.ant-notification-notice-message {
+	color: white;
+	font-weight: bold;
+}
+
+.ant-notification-notice-closable {
+	background-color: green;
+	color: white;
+}
+
+.ant-notification-notice-content {
+	background-color: green;
+	color: white;
+}
+
 .button-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,7 +161,7 @@ header a:hover {
 
 ul {
     text-align: center;
-    font-size: 17pt;
+    font-size: 16pt;
 }
 
 li {

@@ -72,7 +72,7 @@ function App() {
                 </div>
             </header>
 
-            <div style={{fontSize:"4vw",padding:8,borderBottom:"1px solid #EEEEEE"}}>
+            <div className='body-container' style={{padding:8,borderBottom:"1px solid #EEEEEE"}}>
                 Your $ALEX holdings: {alexBalance}
             </div>
             
