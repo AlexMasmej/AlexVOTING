@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
   when you want to load a local contract's abi but supply a custom address
 */
 
-export default function useCustomContractLoader(provider,contractName,address) {
+export default function useCustomContractLoader(provider,contractName,address,optionalABI) {
   const [contract, setContract] = useState();
   useEffect(() => {
     async function loadContract() {
@@ -21,9 +21,11 @@ export default function useCustomContractLoader(provider,contractName,address) {
             signer = provider
           }
 
+          console.log("optionalABI",optionalABI)
+
           let customContract = new ethers.Contract(
             address,
-            require("../contracts/"+contractName+".abi.js"),
+            optionalABI?optionalABI:require("../contracts/"+contractName+".abi.js"),
             signer,
           );
           try{

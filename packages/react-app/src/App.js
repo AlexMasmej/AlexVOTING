@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "antd/dist/antd.css";
 import { ethers } from "ethers";
 import "./App.css";
-import { useExchangePrice } from "./hooks";
+import { useExchangePrice, useCustomContractReader, useCustomContractLoader } from "./hooks";
 import { Account } from "./components";
 
 import Vote from "./Vote.js";
@@ -20,6 +20,38 @@ function App() {
     const [address, setAddress] = useState();
     const [injectedProvider, setInjectedProvider] = useState();
     const price = useExchangePrice(mainnetProvider);
+
+    const ERC20  = [{
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "name": "balanceOf",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },]
+      //useCustomContractLoader(provider,contractName,address)
+  const alexTokenContract = useCustomContractLoader(mainnetProvider,"ALEX","0x8BA6DcC667d3FF64C1A2123cE72FF5F0199E5315",ERC20)
+  console.log("alexTokenContract",alexTokenContract)
+  //const alexBalance = useContractReader(props.contracts,props.name,"balanceOf",[props.address],1777);
+  const alexBalance = useCustomContractReader(alexTokenContract,"balanceOf",[address],1777,(hex)=>{
+      return hex.toNumber()/10**4
+  })
+  console.log("alexBalance",alexBalance)
+
+
+
+    // token balance for address on ERC20: 
 
     return (
         <div className='App'>
@@ -39,6 +71,11 @@ function App() {
                     />
                 </div>
             </header>
+
+            <div style={{padding:8,borderBottom:"1px solid #EEEEEE"}}>
+                <h1>Your $ALEX holdings: {alexBalance}</h1>
+            </div>
+            
 
             <div className='body-container'>
                 <Vote
