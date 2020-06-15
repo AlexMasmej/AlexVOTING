@@ -47,7 +47,7 @@ export default function SmartContractWallet(props) {
                 notification.open({
                     message: '👍 Success',
                     description:
-                      '🗳 Voted for '+vote,
+                      '🗳 Voted for '+vote+'!',
                     //onClick: () => {
                       //console.log('Notification Clicked!');
                     //},
@@ -79,14 +79,14 @@ export default function SmartContractWallet(props) {
                         All tokens in your address will count for your vote.
                     </li>
                     <li>
-                        If you vote more than once with the same address, only
+                        If you vote more than once, only
                         the last vote will count.
                     </li>
                     <li>
-                        Votes will be counted on Wednesday 17th June, 12AM UTC
+                        Votes will be counted on Wednesday 17th June midnight UTC.
                     </li>
                     <li>
-                        Results will be displayed here at the end of the vote.
+                        Results will be displayed here.
                     </li>
                     <li>
                         After voting, please keep your $ALEX in your wallet
@@ -94,7 +94,7 @@ export default function SmartContractWallet(props) {
                     </li>
                     <li style={{color: 'black'}}>
                     <br></br>
-                        <h4><strong>VOTE #1: WHAT DAILY HABIT SHOULD I DO THIS JULY?</strong></h4>
+                        <h3><strong>VOTE #1: CHOOSE MY DAILY HABIT THIS JULY</strong></h3>
                     </li>
                 </ul>
             </div>
@@ -131,7 +131,7 @@ export default function SmartContractWallet(props) {
                         );
                     }}
                 >
-                    {"💰 Survive only using Bitcoin"}
+                    {"💰 Pay only using Bitcoin"}
                 </Button>
                 <Button
                     id='wake-up'
