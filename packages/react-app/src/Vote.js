@@ -129,7 +129,7 @@ export default function SmartContractWallet(props) {
                         );
                     }}
                 >
-                    {"💰 Pay only using Bitcoin"}
+                    {"💰 Survive only on Bitcoin"}
                 </Button>
                 <Button
                     id='wake-up'
