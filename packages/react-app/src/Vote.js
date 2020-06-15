@@ -1,6 +1,6 @@
 import React from "react";
 import { ethers } from "ethers";
-import { Button } from "antd";
+import { Button, notification } from "antd";
 const axios = require("axios");
 
 export default function SmartContractWallet(props) {
@@ -43,7 +43,15 @@ export default function SmartContractWallet(props) {
                     result
             )
             .then(function (response) {
-                console.log(response);
+                console.log("VOTE RESPONSE:",response);
+                notification.open({
+                    message: '👍 Success',
+                    description:
+                      '🗳 Voted for '+vote,
+                    //onClick: () => {
+                      //console.log('Notification Clicked!');
+                    //},
+                  });
             })
             .catch(function (error) {
                 console.log(error);

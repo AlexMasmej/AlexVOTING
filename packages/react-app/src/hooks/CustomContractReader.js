@@ -35,7 +35,7 @@ export default function useCustomContractReader(contract,functionName,args,pollT
         if(formatter && typeof formatter == "function"){
           newValue = formatter(newValue)
         }
-        //console.log("GOT VALUE",newValue)
+        console.log("GOT VALUE",newValue)
         if(newValue!=value){
           setValue(newValue)
         }
