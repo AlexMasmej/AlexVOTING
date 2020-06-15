@@ -72,8 +72,8 @@ function App() {
                 </div>
             </header>
 
-            <div style={{padding:8,borderBottom:"1px solid #EEEEEE"}}>
-                <h1>Your $ALEX holdings: {alexBalance}</h1>
+            <div style={{fontSize:"4vw",padding:8,borderBottom:"1px solid #EEEEEE"}}>
+                Your $ALEX holdings: {alexBalance}
             </div>
             
 
