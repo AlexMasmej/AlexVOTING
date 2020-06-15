@@ -22,7 +22,7 @@ export default function SmartContractWallet(props) {
 
         if(props.alexBalance <= 0){
             notification.open({
-                message: '😢 Failed',
+                message: '🛑 Failed',
                 description:
                   '💰 You must hold $ALEX tokens to vote.',
                 //onClick: () => {
@@ -61,7 +61,7 @@ export default function SmartContractWallet(props) {
             .then(function (response) {
                 console.log("VOTE RESPONSE:",response);
                 notification.open({
-                    message: '👍 Success',
+                    message: '✅ Success',
                     description:
                       '🗳 Voted for '+vote+'!',
                     //onClick: () => {
