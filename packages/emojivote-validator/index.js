@@ -48,7 +48,7 @@ fs.readFile('credentials.json', (err, content) => {
           //console.log("recovered",recovered)
 
           if(recovered===row[0]){
-            console.log("✅ Valid Signature 🔏 for account "+recovered+" voting for "+emoji)
+            console.log("✅ Valid Signature 🔏 for account "+recovered+" voting for "+vote)
 
             let validAddress = recovered
 
@@ -63,7 +63,7 @@ fs.readFile('credentials.json', (err, content) => {
 
             let thisVote = {
               address: validAddress,
-              vote: emoji,
+              vote: vote,
               balance: balance,
               timestamp: timestamp
             }
