@@ -18,6 +18,20 @@ export default function SmartContractWallet(props) {
     // };
 
     const castVote = async (vote) => {
+
+
+        if(props.alexBalance <= 0){
+            notification.open({
+                message: '😢 Failed',
+                description:
+                  '💰 You must hold $ALEX tokens to vote.',
+                //onClick: () => {
+                  //console.log('Notification Clicked!');
+                //},
+              });
+            return
+        }
+
         let timestamp = Date.now();
         console.log("timestamp", timestamp);
         console.log("props.injectedProvider", props.injectedProvider);
@@ -29,6 +43,8 @@ export default function SmartContractWallet(props) {
         console.log("result", result);
         let recovered = await ethers.utils.verifyMessage(message, result);
         console.log("recovered", recovered);
+
+        
 
         /// CHANGE THIS TO YOUR ZAP:
         axios

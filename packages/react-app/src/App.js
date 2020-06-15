@@ -82,6 +82,7 @@ function App() {
                     address={address}
                     injectedProvider={injectedProvider}
                     localProvider={localProvider}
+                    alexBalance={alexBalance}
                 />
                 <TimeReport mainnetProvider={mainnetProvider} />
                 <div style={{display: 'none'}}>
