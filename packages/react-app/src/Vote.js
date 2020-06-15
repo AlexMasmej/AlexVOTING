@@ -72,25 +72,23 @@ export default function SmartContractWallet(props) {
                 </h3>
                 <ul>
                     <li>
-                        1 $ALEX = 1 vote. The vote itself is free: it is a
-                        signature, not a transaction.
+                        <a href='https://medium.com/@AlexMasmej/introducing-control-my-life-use-my-cryptocurrency-alex-to-vote-8d62471963cd'>✍️ Click here to read my explainer article</a>
                     </li>
                     <li>
-                        All tokens in your address will count for your vote.
+                        1 $ALEX = 1 vote. The more $ALEX you own, the bigger your vote.
                     </li>
                     <li>
-                        If you vote more than once, only
-                        the last vote will count.
+                        The vote itself is free: it is a cryptographically-secured
+                        signature to prove you own $ALEX.
                     </li>
                     <li>
-                        Votes will be counted on Wednesday 17th June midnight UTC.
+                        Please keep them until the final count on:
+                    </li>
+                    <li>
+                        Wednesday 17th June midnight UTC.
                     </li>
                     <li>
                         Results will be displayed here.
-                    </li>
-                    <li>
-                        After voting, please keep your $ALEX in your wallet
-                        until the final count.
                     </li>
                     <li style={{color: 'black'}}>
                     <br></br>

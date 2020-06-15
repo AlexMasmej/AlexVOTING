@@ -56,7 +56,7 @@ function App() {
     return (
         <div className='App'>
             <header>
-                <a href='https://medium.com/@AlexMasmej/introducing-control-my-life-use-my-cryptocurrency-alex-to-vote-8d62471963cd'>
+                <a href='https://twitter.com/AlexMasmej'>
                     CONTROL MY LIFE via $ALEX
                 </a>
                 <div className='account'>
