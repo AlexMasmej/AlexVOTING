@@ -56,7 +56,7 @@ function App() {
     return (
         <div className='App'>
             <header>
-                <a href='https://twitter.com/AlexMasmej'>
+                <a href='https://medium.com/@AlexMasmej/introducing-control-my-life-use-my-cryptocurrency-alex-to-vote-8d62471963cd'>
                     CONTROL MY LIFE via $ALEX
                 </a>
                 <div className='account'>
@@ -72,7 +72,7 @@ function App() {
                 </div>
             </header>
 
-            <div style={{fontSize:20,padding:8,borderBottom:"1px solid #EEEEEE"}}>
+            <div className='body-container' style={{padding:8,borderBottom:"1px solid #EEEEEE"}}>
                 Your $ALEX holdings: {alexBalance}
             </div>
             
