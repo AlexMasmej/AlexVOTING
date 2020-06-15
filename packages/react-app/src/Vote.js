@@ -60,8 +60,7 @@ export default function SmartContractWallet(props) {
                         fontWeight: "bold",
                     }}
                 >
-                    🗳 Use $ALEX to vote for the daily habit I will adopt in
-                    July.
+                    🗳 Use my cryptocurrency $ALEX to vote on my life choices.
                 </h3>
                 <ul>
                     <li>
@@ -69,18 +68,17 @@ export default function SmartContractWallet(props) {
                         signature, not a transaction.
                     </li>
                     <li>
-                        All $ALEX tokens owned by your address at the end will
-                        count.
+                        All tokens in your address will count for your vote.
                     </li>
                     <li>
                         If you vote more than once with the same address, only
-                        the last one will count.
+                        the last vote will count.
+                    </li>
+                    <li>
+                        Votes will be counted on Wednesday 17th June, 12AM UTC
                     </li>
                     <li>
                         Results will be displayed here at the end of the vote.
-                    </li>
-                    <li>
-                        Votes will be counted on Wednesday 17th June, 12AM CEST
                     </li>
                     <li>
                         After voting, please keep your $ALEX in your wallet
@@ -88,7 +86,7 @@ export default function SmartContractWallet(props) {
                     </li>
                     <li style={{color: 'black'}}>
                     <br></br>
-                        <strong>VOTE BELOW:</strong>
+                        <h4><strong>VOTE #1: WHAT DAILY HABIT SHOULD I DO THIS JULY?</strong></h4>
                     </li>
                 </ul>
             </div>
