@@ -85,7 +85,7 @@ function App() {
                     alexBalance={alexBalance}
                 />
                 <TimeReport mainnetProvider={mainnetProvider} />
-                <div style={{display: 'none'}}>
+                <div>
                     <VoteReport />
                 </div>
                 <p>💰 Don't have any $ALEX token to vote? Get some below or <a href='http://alex.buymagic.xyz'>click here</a>:</p>
